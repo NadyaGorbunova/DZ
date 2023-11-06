@@ -1,0 +1,5 @@
+number = float(input())
+if str(number)[-1] == "0":
+    print("целое")
+else:
+    print("нецелое")
