@@ -1,0 +1,15 @@
+n = int(input()) 
+numbers_list = [ ]
+counter = 0
+for i in range(n):
+    number = str(input()) 
+    numbers_list.append(number) 
+for number in numbers_list:
+    last_letter = ""
+    for letter in number:
+        if last_letter != "":
+            if int(letter) % 2 == int(last_letter) % 2:
+                counter += 1
+                break
+        last_letter = letter
+print(n - counter)
