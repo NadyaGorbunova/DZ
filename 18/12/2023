@@ -1,0 +1,12 @@
+numbers = []
+n = int(input("Введите количество чисел: "))
+for i in range(n):
+    num = (input("Введите число: "))
+    numbers.append(num)
+bin_numbers = []
+for i in range(len(numbers)):
+    bin_numbers.append(bin(int(numbers[i]))[2:])
+
+res = bin_numbers.index(max(bin_numbers))
+
+print(numbers[int(res)])
