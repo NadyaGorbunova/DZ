@@ -1,0 +1,18 @@
+base = '0123456789abcdefghijklmnopqrstuvwxyz' 
+number = input () 
+result = 0
+power = 0
+for i in number[::-1]:
+    result += base.index(i) * (37 ** power)
+    power += 1
+number = result
+
+number_1 = input () 
+result = 0
+power = 0
+for i in number_1[::-1]:
+    result += base.index(i) * (37 ** power)
+    power += 1
+number_1 = result
+
+print(number + number_1)
