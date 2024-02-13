@@ -1,0 +1,6 @@
+def dz(*args):
+    numeroes = []
+    for number in args:
+        s = sum([int(x) for x in str(number)])
+        numeroes.append(s)
+    return(numeroes)
