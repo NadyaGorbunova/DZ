@@ -1,0 +1,6 @@
+def task_two(numbers_list, forbidden_number):
+    right_numbers = []
+    for number in numbers_list:
+        if number != forbidden_number:
+            right_numbers.append(number)
+    return right_numbers
