@@ -1,0 +1,6 @@
+def task_one(*args):
+    right_numbers = []
+    for number in args:
+        if number % 4 == 0 and str(number)[-1] == "2":
+            right_numbers.append(number)
+    return len(right_numbers)
