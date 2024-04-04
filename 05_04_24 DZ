@@ -1,0 +1,3 @@
+def dz(a):
+    a.sort(key=len)
+    return a
