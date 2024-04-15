@@ -1,0 +1,14 @@
+def dz(list_with_str_and_other):
+    #создаю пустой список
+    list_only_with_str = []
+    #перебираю элементы в списке из входных данных
+    #и если они это строка добавляю в мой новый список только со строками
+    for el in list_with_str_and_other:
+        if type(el) is str:
+            list_only_with_str.append(el)
+    #сортирую список по длине и возращаю его)
+    list_only_with_str.sort(key=len)
+    return list_only_with_str
+
+#вот так можете проверить, пожалуйста, поставьте 5
+print(dz(['d', 'ghjk', 'dd', 9, [6, 7, 8]]))
